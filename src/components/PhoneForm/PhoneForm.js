@@ -24,7 +24,7 @@ export const PhoneForm = () => {
   const onSubmit = (name, phone) => {
     const contact = { name, phone };
     if (
-      contactList.items.find(
+      contactList.find(
         userCard => userCard.name.toLowerCase() === contact.name.toLowerCase()
       )
     ) {
